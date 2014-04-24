@@ -19,8 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-# This functions returns a cached inverse matrix of a CacheMatrix object
-# If the cached data is not present it is computed and saved
+# The function returns a cached inverse matrix of a CacheMatrix object
+# If the cached data is not present, it is computed and saved
 
 cacheSolve <- function(x, ...) {
     s <- x$getsolve()
@@ -43,7 +43,7 @@ testCacheMatrix <- function() {
     
     cm <- makeCacheMatrix(m)
 
-    # Iteration 1: value calculated, Iteration 2&3: cached value returned
+    # Iteration 1: value is calculated, Iteration 2&3: cached value returned
     
     for (i in 1:3) {
         print(paste0("Iteration ", i))
